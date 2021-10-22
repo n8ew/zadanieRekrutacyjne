@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+    <title>Pop-up</title>
+</head>
+<body>
+    <div class="page_content">
+        <div class="pop_up">
+            <div class="content">
+               <div class="welcome_content ">
+                    <div class="header">
+                        <h2>witaj!</h2>
+                        <p>
+                            wypełnij formularz i zgarnij <span class="key_phrase">kupon rabatowy</span> do wykorzystanie przy najbliższych zakupach
+                        </p>
+                    </div>
+                    <form>
+                        <div class="top_part">
+                            <div class="form_controle">
+                                <input placeholder=" " type="email" name="email" class="action-email">
+                                <label for="email">
+                                    <span>email</span>
+                                </label>
+                                <span class="validation action-valid-email">nieprawidłowy email</span>
+                            </div>
+                            <div class="form_controle">
+                                <input placeholder=" " type="text" name="name" class="action-name"> 
+                                <label for="name">
+                                    <span>imię</span>
+                                </label>
+                                <span class="validation action-valid-name">wprowadź imię</span>
+                            </div>
+                        </div>
+                        <div class="checkbox_holder">
+                            <input type="checkbox" name="checkbox" class="action-checkbox">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid natus tempora, aperiam porro nihil iure hic maiores animi adipisci id laudantium voluptatem, quidem, eum neque magni vero velit quibusdam sunt!
+                            </p>
+                        </div>
+                        <span class="validation action-valid-checkbox">pole wymagane</span>
+                    </form>
+                    <button class="action-button">wyślij</button>
+               </div>
+               <div class="thankyou_content hidden">
+                   <header>
+                       <h2>dziękujemy <span class="underline_phrase theName">Bob</span></h2>
+                   </header>
+                   <p>
+                        za wypełnienie formularza, kod rabatowy czeka na ciebie na twojej skrzynce mailowej
+                   </p>
+               </div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
