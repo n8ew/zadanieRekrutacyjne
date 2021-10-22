@@ -26,6 +26,7 @@
 .active {
     display: flex;
 }
+
 .pop_up .content {
     width: 80%;
     min-width: 280px;
@@ -34,6 +35,12 @@
     min-height: 600px;
     background-color: var(--bg-color);
     padding: 25px;
+    scale: 0.1;
+    animation: popup 0.7s ease forwards;
+}
+@keyframes popup {
+    0%{}
+    100%{ scale: 1;}
 }
 .welcome_content {
     display: flex;
