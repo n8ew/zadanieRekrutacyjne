@@ -26,7 +26,6 @@
 .active {
     display: flex;
 }
-
 .pop_up .content {
     width: 80%;
     min-width: 280px;
